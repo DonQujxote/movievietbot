@@ -2,7 +2,7 @@ const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios");
 const fs = require("fs");
 
-const BOT_TOKEN = "8452578265:AAEVBToezEoUWVcqRIpvek3hMmUPoTjiRMU";
+const BOT_TOKEN = process.env.BOT_TOKEN;
 
 if (!BOT_TOKEN || BOT_TOKEN === "DAN_TOKEN_CUA_BAN") {
   console.log("❌ Bạn chưa dán BOT TOKEN");
